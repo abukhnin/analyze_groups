@@ -9,7 +9,7 @@ shinyUI(fluidPage(
     sidebarLayout(
         sidebarPanel(
             helpText("Adjust data file options if needed, then choose the file to load (either local or from the Internet)."),
-            helpText("For example choose the file https://dataminingproject.googlecode.com/svn/iris.csv"),
+            helpText("For example choose the file http://dataminingproject.googlecode.com/svn/iris.csv"),
             textInput("fieldSeparator", "Field separator character", value=","),
             textInput("decimalPoint", "Character used for decimal points", value="."),
             fileInput("inputFile", label="Data file"),
@@ -48,8 +48,8 @@ shall be rejected, i.e. the field allows distinguishing between the groups with 
 <br/>
 For example:
 <ul>
-<li>Keep default values for the field separator character, and the character used for decimal points</li>
-<li>Choose the file https://dataminingproject.googlecode.com/svn/iris.csv</li>
+<li>Keep default values for the field separator character and the character used for decimal points</li>
+<li>Choose the file http://dataminingproject.googlecode.com/svn/iris.csv</li>
 <li>Keep 'Species' as the group field</li>
 <li>Under 'Result of group comparison with Kruskal-Wallis test' caption, 
 you will find a table with p-values for each of four non-grouping fields. 
@@ -58,5 +58,4 @@ which means the groups 'setosa', 'versicolor', and 'virginica'
 can be distinguished by each non-grouping field with significance level p<0.001</li>
                   ")
     )
-)
-))
+)))
